@@ -29,11 +29,11 @@ Potato leaves dataset from Kaggle.
 ## Dataset
 Provide details about the dataset:
 
-Source: Mention the dataset source or link (if publicly available).
+1) Source: Mention the dataset source or link (if publicly available).
 
-Structure: Explain the dataset's structure, including the number of images and categories.
+2) Structure: Explain the dataset's structure, including the number of images and categories.
 
-Preprocessing: Steps taken to clean and preprocess the dataset.
+3) Preprocessing: Steps taken to clean and preprocess the dataset.
 ## Steps to Run the Project
 ### 1. Clone this repository:
 git clone https://github.com/Sainiharsh25/potato-leaves-disease-classification.git
