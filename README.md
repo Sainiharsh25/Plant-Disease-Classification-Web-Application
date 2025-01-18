@@ -15,13 +15,17 @@ Potential integration of a web or mobile app for ease of use.
 ### Scalable:
 Can be expanded to include more crops and diseases.
 ## Technologies Used
-Machine Learning Frameworks: Scikit-learn, TensorFlow/Keras, PyTorch
+### Machine Learning Frameworks:
+Scikit-learn, TensorFlow/Keras, PyTorch
 
-Data Processing: OpenCV, NumPy, Pandas
+### Data Processing:
+OpenCV, NumPy, Pandas
 
-Visualization: Matplotlib, Seaborn
+### Visualization:
+Matplotlib, Seaborn
 
-Dataset: Potato leaves dataset from Kaggle.
+### Dataset:
+Potato leaves dataset from Kaggle.
 ## Dataset
 Provide details about the dataset:
 
@@ -59,11 +63,11 @@ potato-leaves-disease-classification/
 |-- requirements.txt
 |-- README.md
 ## Future Enhancements
-Add support for real-time disease detection using smartphone cameras.
+1) Add support for real-time disease detection using smartphone cameras.
 
-Improve model performance by experimenting with advanced architectures (e.g., EfficientNet, Vision Transformers).
+2) Improve model performance by experimenting with advanced architectures (e.g., EfficientNet, Vision Transformers).
 
-Deploy the model as a cloud-based API.
+3) Deploy the model as a cloud-based API.
 
 ## Contact
 For any questions or feedback, please reach out:
