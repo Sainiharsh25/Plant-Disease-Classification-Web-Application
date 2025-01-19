@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --blue: #0071FF;
+  --light-blue: #B6DBF6;
+  --dark-blue: #005DD1;
+  --grey: #f2f2f2;
+}
+
+body {
+  /* background-image: url("{{url_for('static', filename='bg1.jpg')}}");
+  background-size: cover; */
+  background: url('../static/bac.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background: var(--light-blue); */
+}
+
+#btn {
+  display: block;
+  margin: 10px 8px;
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+
+}
+
+.container {
+  max-width: 450px;
+  width: 450%;
+  /* background:rgb(174, 157, 137); */
+  padding: 30px;
+  border-radius: 30px;
+  border: 2px solid black;
+}
+
+.img-area {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  background: rgb(232, 214, 193);
+  margin-bottom: 30px;
+  border: 2px solid black;
+  border-radius: 15px;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#btn:hover {
+  color: aliceblue;
+  background-color: black;
+}
+
+h1 {
+  margin: 23px 0px;
+  text-align: center;
+  text-decoration: underline;
+
+}
+
+#img-view img {
+  width: 100px;
+  margin-top: 20px;
+}
+#img-view form{
+  text-align: center;
+  justify-content: center;
+  display: inline;
+  padding: 136px;
+  margin: 0px -230px;
+}

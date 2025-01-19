@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Prediction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        :root {
+            --blue: #0071FF;
+            --light-blue: #B6DBF6;
+            --dark-blue: #005DD1;
+            --grey: #f2f2f2;
+        }
+
+        body {
+            background-image: url("{{url_for('static', filename='bac.jpg')}}");
+            background-size: cover;
+            /* background: url('../static/bac.jpg') no-repeat center center/cover; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* background: var(--light-blue); */
+        }
+
+        #btn {
+            display: block;
+            margin: 10px 8px;
+            position: absolute;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 5px 10px;
+
+        }
+
+        .container {
+            max-width: 600px;
+            width: 450%;
+            background: rgb(0, 170, 189);
+            padding: 30px;
+            border-radius: 30px;
+            border: 2px solid black;
+        }
+
+        .img-area {
+            position: relative;
+            width: 100%;
+            height: 310px;
+            background: whitesmoke;
+            margin-bottom: 30px;
+            border: 2px solid black;
+            border-radius: 15px;
+            /* overflow: hidden; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #btn:hover {
+            color: aliceblue;
+            background-color: black;
+        }
+
+        h1 {
+            margin: 0px 0px;
+            text-align: center;
+            text-decoration: underline;
+
+        }
+
+        #img-view img {
+            width: 100px;
+            margin-top: 20px;
+        }
+
+        #img-view form {
+            text-align: center;
+            justify-content: center;
+            display: inline;
+            padding: 136px;
+            margin: 0px -230px;
+        }
+
+        #services {
+            margin: -25px;
+            display: flex;
+        }
+
+        #services .box {
+            border: 2px solid black;
+            padding: 8px;
+            margin: 31px 6px;
+            border-radius: 20px;
+            background-color: whitesmoke;
+        }
+
+        .h-primary {
+            background-color: whitesmoke;
+            border: 2px solid black;
+            border-radius: 20px;
+            /* font-family: 'Times New Roman', Times, serif; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="services-container">
+            <h1 class="h-primary center">PLANT DISEASE DECTECTION</h1>
+            <div id="services">
+                <div class="box">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque nihil aliquam possimus adipisci
+                        obcaecati. Impedit officiis nesciunt veniam, omnis, delectus cupiditate, suscipit distinctio
+                        earum
+                        mollitia dolorum eligendi modi nemo nobis.</p>
+                </div>
+        </section>
+        <div class="img-area">
+            <h1>"UPLOAD IMAGE"</h1>
+            <div id="img-view">
+                <img src="{{url_for('static', filename='icon.png')}}">
+                <!-- <img src="../static/icon.png" alt=""> -->
+                <form action="/upload" method="post" enctype="multipart/form-data" id="form">
+                    <input type="file" name="file" accept=".jpg">
+                    <input type="submit" value="Upload and Predict" id="btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
