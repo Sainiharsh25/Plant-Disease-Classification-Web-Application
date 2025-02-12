@@ -16,7 +16,7 @@ def uploadFile():
 
         if file:
             # Create a dictionary with the file data
-            files = {'file': (file.filename, file)}
+            files = {'file': (file.myFile, file)}
 
             # Make a POST request to the API
             response = requests.post(API_URL, files=files)
