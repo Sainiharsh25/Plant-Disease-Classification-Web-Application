@@ -1,4 +1,4 @@
-# Potato-Leaves-Disease-Classification
+# Plant Disease Classification Web Application
 A Machine Learning (ML) and Deep Learning (DL) project for classifying diseases in potato leaves. This project leverages advanced algorithms to accurately identify and classify various diseases based on leaf images.
 ## Objective
 The primary goal is to develop a system capable of detecting and classifying common diseases in potato leaves to aid farmers and agriculturists in early diagnosis and effective management.
